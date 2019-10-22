@@ -308,10 +308,6 @@ public class ImageToArray extends JFrame {
 
     Void printArr(int[][] imgArr, int types, JLabel lblStatus) {
 
-//        Thread t = new Thread(new Runnable() {
-//
-//            @Override
-//            public void run() {
         txtAreaResult.setText(null);
         String st = lblStatus.getText();
         double destination = imgArr.length * imgArr[0].length;
@@ -374,15 +370,7 @@ public class ImageToArray extends JFrame {
         if (types != 2 && types != 3) {
             txtAreaResult.append("};");
         }
-//            }
-//        });
-//
-//        t.start();
-//        try {
-//            t.join();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+
         areaScrollPane.setVisible(true);
         return (null);
     }
